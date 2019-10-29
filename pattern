@@ -1,11 +1,14 @@
 def  alpha_tri(n):        #defining function which create a triangle having 
     num = 65              #starting with ASCII value of 'A'
-    for i in range(0, n):        # -for- loop for changing row 
+    for i in range (int(n)):        # -for- loop for changing row
+	s =""
+        for k in range (n-i):
+            s = s + " "
         for j in range(0, i+1):  # -for- loop for elements in the row 
           ch = chr(num)
-          print(ch, end=" ")
+          s = s + ch + " "
           num = num +1           # increasing the number
-        print("\r")              
+        print s             
         
         
 height_of_triangle = input()     # getting input
