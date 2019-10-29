@@ -1,6 +1,6 @@
 def  alpha_tri(n):        #defining function which create a triangle having 
     num = 65              #starting with ASCII value of 'A'
-    for i in range(0, n):        # -for- loop for changing row 
+    for i in range (int(n)):        # -for- loop for changing row 
         for j in range(0, i+1):  # -for- loop for elements in the row 
           ch = chr(num)
           print(ch, end=" ")
